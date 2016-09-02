@@ -11,11 +11,6 @@ mov rbp, rsp
 xor rax, rax
 xor r14, r14
 
-	; RDI first , rsi second
-	; r14 = SECOND
-	; r15 = FIRST
-	;;  inc r10 = FIRST
-	;; inc r11 = second
 
 loop :
 	jmp compare

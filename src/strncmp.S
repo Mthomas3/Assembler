@@ -12,7 +12,6 @@ xor r10, r10
 xor r11, r11
 xor r12, r12
 
-	; RDI = first | RSI = second
 
 
 loop :

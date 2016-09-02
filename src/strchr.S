@@ -11,9 +11,9 @@ mov rbp, rsp
 xor rax, rax
 
 loop :
-	cmp byte[rdi + rax], sil 		; compare the first string with second argument a char
-	je ptrend				; if we found the arguments in the string we call the label ptrend it will return the pointer where the occurence starts
-	cmp byte[rdi + rax], 0			; if we dont and we match with the end so 0, we will return null so we will call the label nullend
+	cmp byte[rdi + rax], sil 
+	je ptrend		
+	cmp byte[rdi + rax], 0	
 	je nullend
 	inc rax
 	jmp loop
